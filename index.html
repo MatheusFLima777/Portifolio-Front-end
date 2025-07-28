@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page com Tema</title>
+  <title>Portifolio Pessoal</title>
   <link id="favicon" rel="icon" href="assets/images/LuaCrescente.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,9 +12,9 @@
           <!-- Menu à esquerda -->
           <ul class="nav-menu">
             <li><a href="#">HOME</a></li>
-            <li><a href="#">PROJETOS</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">CONTATO</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+            <li><a href="#sobre-mim">SOBRE</a></li>
+            <li><a href="#contato">CONTATO</a></li>
           </ul>
       
           <!-- Logo central -->
@@ -25,7 +25,7 @@
           <div class="nav-search">
             <div class="nav-search">
                 <button id="theme-toggle" aria-label="Mudar tema">
-                  <img id="theme-icon" src="assets/images/luaCheia.svg" alt="Ícone do tema" />
+                  <img id="theme-icon" alt="Ícone do tema" />
                 </button>
             </div>
         </div>
@@ -48,16 +48,20 @@
             <a href="https://www.instagram.com/omatheusformiga" target="_blank" rel="Github">
                 <img src="assets/images/Instagram SVG.svg" alt="instagram Logo" />
             </a>  
+            
         </div>
-        <div class="linha"></div>
-        <section class="projetos-container">
+        <div class="see-projects-button">
+          <a href="#projetos">VER TODOS OS PROJETOS <span style="font-size: 20px;">↘</span></a>
+        </div>
+        
+        <section class="card-section">
             <div class="card">
                 <div class="card-content">
                   <span class="category">&gt; <span class="highlight">git tips</span></span>
                   <h2 class="title">Como criar Apelidos para os Comandos Git</h2>
                   
                   <div class="author">
-                    <img src="" alt="Foto do autor" class="author-img">
+                    <img src="assets/images/author.jpg" alt="Foto do autor" class="author-img">
                     <div>
                       <p class="author-name">Matheus Lima</p>
                       <p class="author-role">Desenvolvedor FullStack</p>
@@ -65,8 +69,190 @@
                   </div>
                 </div>
               </div>
+            </section>
+            <section class="tech-section">
+              <h2>Conhecimento nas principais <br>tecnologias do mercado</h2>
               
-        </section>
+              <!-- Icones das ferramentas-->
+              <div class="tech-icons">
+                <img src="assets/images/java-svgrepo-com.svg" alt="Logo Java">
+                <img src="assets/images/spring-svgrepo-com.svg" alt="Logo Spring">
+                <img src="assets/images/javascript-svgrepo-com.svg" alt="Logo JavaScript">
+                <img src="assets/images/angular-svgrepo-com.svg" alt="Logo Angular">
+              </div>
+            </section>
+                
+              <section id="projetos">
+                <h2 class="section-title">PROJETOS</h2>
+              
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                  <img src="assets/images/Pokedex.png" alt="Pokedex DIO">
+                  <div class="project-info">
+                    <h3>Pokedex - DIO</h3>
+                    <ul>
+                      <li>Utilização de API Pública</li>
+                      <li>Filtragem por preço e categoria.</li>
+                    </ul>
+                    <div class="techs">
+                      <span class="tech">HTML</span>
+                      <span class="tech">CSS</span>
+                      <span class="tech">JavaScript</span>
+                      <span class="tech">API</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://matheusflima777.github.io/js-developer-pokedex/" target="_blank">PRÉVIA DO PROJETO</a>
+                      <a href="https://github.com/MatheusFLima777/js-developer-pokedex" target="_blank">VER REPOSITÓRIO</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Projeto 2 -->
+                <div class="project-card reverse">
+                  <img src="/assets/images/LoginTela.png" alt="Tela de Login em Angular">
+                  <div class="project-info">
+                    <h3>Tela De login criada em Angular + Java</h3>
+                    <ul>
+                      <li>Tela de Login criada utilizando Autenticação básica</li>
+                      <li>Utilizada para entender os conceitos de Autenticacao e routes em Angular</li>
+                      <li>Será utilizada em um novo projeto que estou desenvolvendo</li>
+                    </ul>
+                    <div class="techs">
+                      <span class="tech">TypeScript</span>
+                      <span class="tech">Java</span>
+                      <span class="tech">JWT</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="#" target="_blank">PRÉVIA DO PROJETO</a>
+                      <a href="https://github.com/MatheusFLima777/Tela-de-login-com-autentica-o-JWT" target="_blank">VER REPOSITÓRIO</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                  <img src="assets/images/Calculadora JS.png" alt="Calculadora em JS">
+                  <div class="project-info">
+                    <h3>Calculadora em JavaScript</h3>
+                    <ul>
+                      <li>Listagem de favoritos;</li>
+                      <li>Carrinho de compras;</li>
+                      <li>Filtragem por preço e categoria.</li>
+                    </ul>
+                    <div class="techs">
+                      <span class="tech">JavaScript</span>
+                      <span class="tech">HTML</span>
+                      <span class="tech">CSS</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://matheusflima777.github.io/Calculadora-JS/" target="_blank">PRÉVIA DO PROJETO</a>
+                      <a href="https://github.com/MatheusFLima777/Calculadora-JS" target="_blank">VER REPOSITÓRIO</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="see-all">
+                  <a href="#">VER TODOS OS PROJETOS</a>
+                </div>
+              </section>
+              <section id="sobre-mim">
+                <div class="container">
+                  <div class="perfil">
+                    <img src="assets/images/author.jpg" alt="Foto de perfil" class="avatar" />
+                  </div>
+              
+                  <div class="descricao">
+                    <h2>SOBRE MIM</h2>
+                    <p><strong>Matheus Lima</strong> Descrição sobre você e suas habilidades e experiências. Descrição sobre você e suas habilidades e experiências. Descrição sobre você e suas habilidades e experiências. Descrição sobre você e suas habilidades e experiências.</p>
+                    <p><strong>Idiomas:</strong> <span>Inglês: Básico</span></p>
+              
+                    <div class="botoes">
+                      <a href="https://www.linkedin.com/in/matheus-f-lima" target="_blank" class="botao">CONECTE-SE COMIGO</a>
+                      <a href="#" class="botao secundario">CURRÍCULO</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="informacoes">
+                  <div class="coluna">
+                    <h3>FORMAÇÃO</h3>
+                    <p><strong>Sistemas da Informação</strong><br>
+                      Jan 2022 - Atualmente<br>
+                      Universidade Nove de Julho<br>
+                    </p>
+              
+                    <h3>EXPERIÊNCIAS</h3>
+                    <p><strong>Analista de Service Desk Sênior</strong><br>
+                      Transportes Della volpe. Nov 2022 - Atualmente<br>
+                      Atendimento e suporte aos Usuários, criação de rotinas PL/SQL, reconhecimento e correção de erros via banco de dados.
+                      <ul>
+                        <li>Correção de erros</li>
+                        <li>Suporte Técnico</li>
+                        <li>Criação de Testes/Procedures em PL/SQL</li>
+                      </ul>
+                    </p>
+                  </div>
+              
+                  <div class="coluna">
+                    <h3>CURSOS</h3>
+              
+                    <details open>
+                      <summary>Oracle PL SQL com SCRUM do
+                        jeito Certo + SQL</summary>
+                      <p><small>Udemy, Instrutor Vinicius Ribeiro</small></p>
+                      <p>16h totais</p>
+                      <ul>
+                        <li>CRUD em SQL</li>
+                        <li>Desenvolvimento de Testes e Procedures</li>
+                        <li>Desenvolvimento de Views e Querys avançadas em SQL</li>
+                      </ul>
+                    </details>
+              
+                    <details>
+                      <summary>Desenvolvimento Frontend com Angular</summary>
+                      <p><small>Dio.me</small></p>
+                      <p>68h totais</p>
+                      <ul>
+                        <li>Conhecimento em components em Angular</li>
+                        <li>Conhecimento em Services no Angular</li>
+                        <li>Conhecimento em rotas no Angular</li>
+                      </ul>
+                    </details>
+                    <details>
+                      <summary>Formação Angular + Spring Boot</summary>
+                      <p><small>Udemy, Instrutor Valdir Cezar</small></p>
+                      <p>16h totais</p>
+                      <ul>
+                        <li>Conhecimentos em Spring Data JPA</li>
+                        <li>Criar e Consumir uma API Rest</li>
+                        <li>Padrão DTO</li>
+                        <li>Desenvolvimento em camadas utilizando o padrão MVC</li>
+                      </ul>
+                    </details>
+                  </div>
+                </div>
+              </section>        
+              <section id="contato">
+                <h2>CONTATE-ME</h2>
+                <p>
+                  Estou disponível para serviços e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.
+                </p>
+              
+                <div class="redes-sociais">
+                  <a href="https://github.com/MatheusFLima777" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                  <a href="https://www.linkedin.com/in/matheus-f-lima" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                  <a href="https://www.instagram.com/omatheusformiga/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+              
+                <div class="email-box">
+                  limamatheus0010@gmail.com
+                </div>
+              
+                <footer>
+                  <p>© 2025. Todos os Direitos Reservados. Matheus Lima. Desenvolvido por ML.</p>
+                </footer>
+              </section>
+                    
         </main>
   <script src="main.js"></script>
 </body>

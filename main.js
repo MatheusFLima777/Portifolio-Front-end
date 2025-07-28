@@ -2,7 +2,7 @@ const toggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const favicon = document.getElementById('favicon');
 
-const lightIcon = 'assets/images/LuaCheia.svg';
+const lightIcon = 'assets/images/moon-sun-svgrepo-com.svg';
 const darkIcon = 'assets/images/luaCrescente.svg';
 
 function setTheme(isDark) {
