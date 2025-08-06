@@ -35,14 +35,11 @@ body.light-mode .nav-logo {
   filter: invert(1);
 }
 
-body.light-mode .nav-menu li a:hover {
-  color: #0077cc;
+body.light-mode .nav-menu li a:hover,
+body.dark-mode .nav-menu li a:hover  {
+  color: #00aaff;
 }
 
-body.dark-mode #theme-icon {
-  filter: brightness(0) invert(1);
-  transition: filter 0.4s ease;
-}
 
 /* Tema escuro */
 body.dark-mode {
@@ -55,13 +52,15 @@ body.dark-mode .navbar {
   border-bottom: 1px solid #28292E;
 }
 
+body.dark-mode #theme-icon {
+  filter: brightness(0) invert(1);
+  transition: filter 0.4s ease;
+}
+
 body.dark-mode .nav-menu li a {
   color: #fff;
 }
 
-body.dark-mode .nav-menu li a:hover {
-  color: #00aaff;
-}
 
 body.dark-mode .tech-section {
   background-color: #28292E;
@@ -172,7 +171,9 @@ body.dark-mode .Links img {
 
 .see-projects-button {
   text-align: center;
-  margin: 20px auto 60px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 55px;
 }
 
 .see-projects-button a {
@@ -196,10 +197,100 @@ body.light-mode .see-projects-button a:hover {
   background-color: #111217;
   color: #F0F0F0;
 }
+body.dark-mode #projetos {
+  background-color: #111217;
+  color: #f0f0f0;
+}
+body.dark-mode #projetos li{
+  color: #f0f0f0;
+}
 
-.see-projects-button a:hover {
-  background-color: #F0F0F0;
+body.dark-mode .section-title{
+  color: #f0f0f0;
+}
+
+body.dark-mode .tech{
+  color: #F0F0F0;
+  border: 1px solid #F0F0F0;
+}
+body.dark-mode .project-info li{
+  color: #F0F0F0;
+}
+body.dark-mode .project-links a {
+  border: 1.5px solid #F0f0f0;
+  color: #9A9A9C;
+  
+}
+
+body.dark-mode .see-all a{
+  color: #9A9A9C;
+  border: 1.5px solid #F0F0F0;
+}
+body.dark-mode #sobre-mim{
+  background-color: #111217;
+  color: #F0F0F0;
+}
+
+
+body.dark-mode #contato{
+  background-color: #111217;
+  color: #9A9A9C;
+}
+
+body.dark-mode .coluna{
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+}
+body.dark-mode .coluna details{
+  border-radius: 6px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  background-color: #111217; 
+}
+
+body.dark-mode details > summary {
+  background-color: #2a2a2a; 
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+}
+
+body.dark-mode details[open] > *:not(summary) {
+  padding: 0 16px 12px 16px;
+  background-color: #111217;
+  font-size: 14px;
+  color: #f0f0f0
+}
+body.dark-mode details[open] > summary {
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .details  ul, li {
+  color: #f0f0f0;
+}
+
+body.dark-mode .see-projects-button a:hover,
+body.dark-mode .see-all a:hover,
+body.dark-mode .project-links a:hover,
+body.dark-mode .botao:hover,
+body.dark-mode .botao2:hover{
+  background-color: #F0F0F0; 
   color: #111217;
+}
+body.dark-mode .botao,
+body.dark-mode .botao2{
+  background-color: #28292E; 
+  color: #F0F0F0;
+}
+
+body.dark-mode .redes-sociais a:hover{
+  color: #F0F0F0;
+}
+body.dark-mode .redes-sociais a{
+  color: #9A9A9C;
 }
 
 .card-section {
@@ -300,12 +391,15 @@ body.light-mode .see-projects-button a:hover {
   cursor: pointer;
 }
 
-#projetos {
+  #projetos {
   background-color: #E9E9E9;
-  color: #000000;
+  color: #0b0b0f;
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: auto;
+}
+#projetos li{
+  color: #0b0b0f;
 }
 
 .section-title {
@@ -416,6 +510,7 @@ body.light-mode .see-projects-button a:hover {
   color: #ffffff;
 }
 
+
 #sobre-mim {
   font-family: 'Arial', sans-serif;
   color: #222;
@@ -455,28 +550,40 @@ body.light-mode .see-projects-button a:hover {
 
 .botoes {
   margin-top: 20px;
+  justify-content: center;
 }
 
 .botao {
   display: inline-block;
   padding: 10px 20px;
   margin-right: 10px;
-  background-color: #fff;
-  color: #000;
+  background-color: #f0f0f0;
+  color: #111217;
   border: 1px solid #000;
   border-radius: 20px;
   text-decoration: none;
   font-size: 0.9rem;
   transition: 0.3s;
 }
-
 .botao:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #111217;
+  color: #f0f0f0;
 }
-
-.botao.secundario {
-  background-color: #f9f9f9;
+.botao2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  color: #111217;
+  border: 1px solid #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.botao2:hover {
+  background-color: #111217;
+  color: #f0f0f0;
 }
 
 .informacoes {
@@ -504,9 +611,10 @@ body.light-mode .see-projects-button a:hover {
   line-height: 1.6;
 }
 
-.coluna ul {
+.coluna li {
   margin-left: 20px;
   padding-left: 10px;
+  color: #0b0b0f;
 }
 
 details {
@@ -550,6 +658,7 @@ summary {
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .redes-sociais a {
@@ -563,7 +672,7 @@ summary {
 }
 
 .redes-sociais a:hover {
-  color: #555;
+  color: #28292E;
 }
 
 .email-box {
@@ -805,11 +914,7 @@ footer {
   .descricao {
     text-align: center;
   }
-  
-  .botoes {
-    justify-content: center;
-  }
-  
+
   .informacoes {
     justify-content: center;
   }
