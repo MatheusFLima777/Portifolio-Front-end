@@ -233,7 +233,7 @@ body.dark-mode #contato{
   color: #9A9A9C;
 }
 
-body.dark-mode .coluna{
+body.dark-mode .coluna li{
   font-family: Arial, sans-serif;
   color: #9A9A9C;
 }
@@ -260,13 +260,8 @@ body.dark-mode details[open] > *:not(summary) {
   font-size: 14px;
   color: #9A9A9C
 }
-body.dark-mode details[open] > summary {
-  border-bottom: 1px solid #9A9A9C;
-}
 
-body.dark-mode .details  ul, li {
-  color: #9A9A9C;
-}
+
 
 body.dark-mode .see-projects-button a:hover,
 body.dark-mode .see-all a:hover,
