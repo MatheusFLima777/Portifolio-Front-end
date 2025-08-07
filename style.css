@@ -64,6 +64,7 @@ body.dark-mode .nav-menu li a {
 
 body.dark-mode .tech-section {
   background-color: #28292E;
+  color: #9A9A9C;
 }
 /* Navbar geral */
 .navbar {
@@ -195,26 +196,21 @@ body.light-mode .see-projects-button a {
 
 body.light-mode .see-projects-button a:hover {
   background-color: #111217;
-  color: #F0F0F0;
+  color: #9A9A9C;
 }
-body.dark-mode #projetos {
-  background-color: #111217;
-  color: #f0f0f0;
-}
-body.dark-mode #projetos li{
-  color: #f0f0f0;
-}
-
+body.dark-mode #projetos,
+body.dark-mode #projetos li,
 body.dark-mode .section-title{
-  color: #f0f0f0;
+  background-color: #111217;
+  color: #9A9A9C;
 }
 
 body.dark-mode .tech{
-  color: #F0F0F0;
+  color: #9A9A9C;
   border: 1px solid #F0F0F0;
 }
 body.dark-mode .project-info li{
-  color: #F0F0F0;
+  color: #9A9A9C;
 }
 body.dark-mode .project-links a {
   border: 1.5px solid #F0f0f0;
@@ -224,11 +220,11 @@ body.dark-mode .project-links a {
 
 body.dark-mode .see-all a{
   color: #9A9A9C;
-  border: 1.5px solid #F0F0F0;
+  border: 1.5px solid #9A9A9C;
 }
 body.dark-mode #sobre-mim{
   background-color: #111217;
-  color: #F0F0F0;
+  color: #9A9A9C;
 }
 
 
@@ -239,7 +235,7 @@ body.dark-mode #contato{
 
 body.dark-mode .coluna{
   font-family: Arial, sans-serif;
-  color: #f0f0f0;
+  color: #9A9A9C;
 }
 body.dark-mode .coluna details{
   border-radius: 6px;
@@ -262,14 +258,14 @@ body.dark-mode details[open] > *:not(summary) {
   padding: 0 16px 12px 16px;
   background-color: #111217;
   font-size: 14px;
-  color: #f0f0f0
+  color: #9A9A9C
 }
 body.dark-mode details[open] > summary {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #9A9A9C;
 }
 
 body.dark-mode .details  ul, li {
-  color: #f0f0f0;
+  color: #9A9A9C;
 }
 
 body.dark-mode .see-projects-button a:hover,
@@ -277,7 +273,7 @@ body.dark-mode .see-all a:hover,
 body.dark-mode .project-links a:hover,
 body.dark-mode .botao:hover,
 body.dark-mode .botao2:hover{
-  background-color: #F0F0F0; 
+  background-color: #9A9A9C; 
   color: #111217;
 }
 body.dark-mode .botao,
